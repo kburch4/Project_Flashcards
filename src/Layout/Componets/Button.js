@@ -8,7 +8,7 @@ const Button = ({
     action = () => {},
 }) => {
     return (
-        <div clannName={extraStyle}>
+        <div className={extraStyle}>
             <button className={`btn btn-${btnStyle} m-2`} onClick={action}>
                 <span className={`oi oi-${icon}`}/> {text}{" "}
             </button>
