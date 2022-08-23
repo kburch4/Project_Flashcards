@@ -8,8 +8,8 @@ import Form from "./ViewCard";
 const EditCard = () => {
   const [deck, setDeck] = useState([]);
   const [card, setCard] = useState({ front: "", back: "" });
-  const deckId = useParams().deckId;
-  const cardId = useParams().cardId;
+  const deckId = parseInt(useParams().deckId);
+  const cardId = parseInt(useParams().cardId);
 
   useEffect(() => {
     async function readDecksAndCards() {
